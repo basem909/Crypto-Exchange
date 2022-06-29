@@ -14,10 +14,6 @@
   cursor: pointer;
 }
 
-.coin-container:nth-child(2) {
-  opacity: .8;
-}
-
 .coin-container > h2 {
   font-size: 3.5vw;
   color: white;

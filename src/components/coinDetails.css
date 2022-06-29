@@ -8,7 +8,7 @@ a {
 }
 
 a > svg {
-fill: white;
+  fill: white;
 }
 
 .coin-title {
@@ -46,4 +46,37 @@ fill: white;
 .coin-rank {
   font-size: 3vw;
   font-weight: bolder;
+}
+
+.cap-info {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  padding-left: 7vw;
+  margin-top: 5vw;
+}
+
+.cap-info > h2 {
+  color: white;
+  font-family: "Gill Sans", sans-serif;
+  font-size: 8vw;
+}
+
+.stats {
+  padding-left: 1vw;
+}
+
+.stats:nth-child(n+2) {
+  background-color: rgb(40, 39, 39);
+}
+
+.stats > h3 {
+  color: white;
+  font-family: "Gill Sans", sans-serif;
+  font-size: 5vw;
+  border: 1px groove lightgray;
+  margin: 0;
+  margin-right: 3vw;
+  margin-bottom: 3vw;
+  padding: 2vw;
 }

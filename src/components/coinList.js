@@ -1,8 +1,8 @@
 import { useSelector } from 'react-redux';
 import Coin from './coin';
-import './coinList.css'
+import './coinList.css';
 
-const CoinsExihbit = ({ clickHandler}) => {
+const CoinsExihbit = ({ clickHandler }) => {
   const coins = useSelector((state) => state.showCoins);
 
   return (

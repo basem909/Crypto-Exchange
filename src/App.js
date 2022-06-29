@@ -6,17 +6,19 @@ import CoinsExihbit from './components/coinList';
 import { showDetails } from './redux/action-creators';
 
 const App = () => {
-    const dispatch = useDispatch();
+  const dispatch = useDispatch();
   const clickHandler = (id) => {
-    dispatch(showDetails(id));}
-  return(
-  <div className="App">
-    <h1>Coin Nerd</h1>
-    <Routes>
-      <Route path="/" element={<CoinsExihbit clickHandler={clickHandler} />} />
-      <Route path='/coinDetails' element={<CoinDetails  clickHandler={clickHandler} />} />
-    </Routes>
-  </div>
-)};
+    dispatch(showDetails(id));
+  };
+  return (
+    <div className="App">
+      <h1>Coin Nerd</h1>
+      <Routes>
+        <Route path="/" element={<CoinsExihbit clickHandler={clickHandler} />} />
+        <Route path="/coinDetails" element={<CoinDetails clickHandler={clickHandler} />} />
+      </Routes>
+    </div>
+  );
+};
 
 export default App;
