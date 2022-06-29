@@ -1,12 +1,9 @@
+import { useSelector } from 'react-redux';
 import Coin from './coin';
-import { useDispatch, useSelector } from "react-redux";
+import './coinList.css'
 
-const CoinsExihbit = () => {
-  const dispatch = useDispatch();
+const CoinsExihbit = ({ clickHandler}) => {
   const coins = useSelector((state) => state.showCoins);
-  // const bookingHandler = (id) => {
-  //   dispatch(bookRocket(id));
-  // };
 
   return (
     <div className="coins-container">
@@ -20,6 +17,8 @@ const CoinsExihbit = () => {
             symbol={coin.symbol}
             price={coin.price}
             rank={coin.rank}
+            cap={coin.cap}
+            clickHandler={clickHandler}
           />
         ))}
     </div>

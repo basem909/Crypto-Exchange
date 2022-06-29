@@ -1,16 +1,16 @@
-import { coinsShowed } from './action-types';
+import { coinsShowed, detailsShowed } from './action-types';
 
 const showCoins = function reducer(state = [], action = {}) {
   switch (action.type) {
     case coinsShowed:
       return [...state, ...action.payload];
-    // case rocketBookingHandler:
-    //   return state.map((rocket) => {
-    //     if (rocket.id !== action.payload) {
-    //       return rocket;
-    //     }
-    //     return { ...rocket, reserved: !rocket.reserved };
-    //   });
+    case detailsShowed:
+      return state.map((coin) => {
+        if (coin.id !== action.payload) {
+          return coin;
+        }
+        return { ...coin, clicked: !coin.clicked };
+      });
     default:
       return state;
   }

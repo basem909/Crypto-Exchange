@@ -1,0 +1,59 @@
+.coins-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.coin-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  border: groove rgb(9, 9, 189) 2px;
+  padding: 1vw;
+  background-color: #0057ff;
+  cursor: pointer;
+}
+
+.coin-container:nth-child(2) {
+  opacity: .8;
+}
+
+.coin-container > h2 {
+  font-size: 3.5vw;
+  color: white;
+  font-family: "Gill Sans", sans-serif;
+  margin: 1vw;
+}
+
+.coin-container > img {
+  height: 20vw;
+  width: 20vw;
+  padding-right: 15vw;
+}
+
+.coin-container > h4 {
+  font-size: 2.5vw;
+  font-family: "Lato", sans-serif;
+  color: white;
+  margin: 0.5vw;
+}
+
+.coin-container > p {
+  font-size: 2vw;
+  font-family: "Gill Sans", sans-serif;
+  color: white;
+  margin: 0.5vw;
+}
+
+.coin-container > button {
+  background-color: inherit;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.coin-container > a > svg {
+  fill: white;
+  width: 3vw;
+  height: 3vw;
+}

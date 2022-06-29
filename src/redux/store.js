@@ -6,12 +6,12 @@ import {
 import thunk from 'redux-thunk';
 import logger from 'redux-logger';
 import showCoins from './reducer';
-import { showRockets } from './action-creators'
+import { showCoinList } from './action-creators';
 
 const allReducers = combineReducers({
   showCoins,
 });
 const store = legacyCreateStore(allReducers, applyMiddleware(logger, thunk));
-store.dispatch(showRockets());
+store.dispatch(showCoinList());
 
 export default store;

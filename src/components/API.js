@@ -10,6 +10,8 @@ const coins = async () => {
     image: coin.image,
     price: coin.current_price,
     rank: coin.market_cap_rank,
+    cap: coin.market_cap,
+    clicked: false,
   }));
   return coins;
 };

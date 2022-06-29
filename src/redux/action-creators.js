@@ -1,7 +1,12 @@
-import coins from "../components/API";
-import { coinsShowed } from './action-types';
+import coins from '../components/API';
+import { coinsShowed, detailsShowed } from './action-types';
 
-export const showRockets = () => async (dispatch) => {
+export const showCoinList = () => async (dispatch) => {
   const coinList = await coins();
   dispatch({ type: coinsShowed, payload: coinList });
 };
+
+export const showDetails = (id) => ({
+  type: detailsShowed,
+  payload: id,
+});

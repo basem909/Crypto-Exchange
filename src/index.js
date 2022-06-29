@@ -5,7 +5,7 @@ import { Provider } from 'react-redux';
 import { BrowserRouter as Router } from 'react-router-dom';
 import App from './App';
 import coins from './components/API';
-import store from './redux/store'
+import store from './redux/store';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,5 +15,5 @@ root.render(
         <App />
       </Router>
     </Provider>
-  </React.StrictMode>
+  </React.StrictMode>,
 );
