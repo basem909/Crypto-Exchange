@@ -1,6 +1,6 @@
 ## Crypto Exchange
 - This projects provides the essential data about the top 100 crypto currencies
-- It fetches the data fro coingeko database and shows it on screen.
+- It fetches the data from coingeko database and shows it on screen.
 - By clicking on details button it takes the user to further details page  
 
 ## Built With
