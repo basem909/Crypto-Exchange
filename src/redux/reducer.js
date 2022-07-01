@@ -12,7 +12,6 @@ const showCoins = function reducer(state = [], action = {}) {
         return { ...coin, clicked: !coin.clicked };
       });
     case coinSearched:
-      console.log('activated');
       return state.map((coin) => {
         if (
           coin.name.toLowerCase().includes(action.payload)

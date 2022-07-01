@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Myprofile snapshot should render APP correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="App"
+  >
+    <div>
+      <header
+        class="header"
+      >
+        <h1
+          class="title"
+        >
+          Crypto World
+        </h1>
+      </header>
+      <img
+        alt="crypto"
+        class="background"
+        src="B.jpeg"
+      />
+      <span
+        class="search-bar"
+      >
+        <label
+          name="search"
+        >
+           Search by Coin here 
+        </label>
+        <input
+          id="searchBar"
+          name="search"
+          placeholder="Coins name or symbol"
+          type="text"
+        />
+      </span>
+      <div
+        class="coins-container"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;

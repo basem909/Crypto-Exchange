@@ -11,7 +11,7 @@ const CoinDetails = ({ clickHandler }) => {
       <header>
         <Link
           to="/"
-          id={coins[0].id}
+           id={coins[0].id}
           onClick={(e) => clickHandler(e.target.id)}
         >
           <svg
