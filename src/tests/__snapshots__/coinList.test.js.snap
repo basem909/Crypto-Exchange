@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CoinsExhibit snapshot should render CoinsExhibit correctly 1`] = `
+<DocumentFragment>
+  <div>
+    <header
+      class="header"
+    >
+      <h1
+        class="title"
+      >
+        Crypto World
+      </h1>
+    </header>
+    <img
+      alt="crypto"
+      class="background"
+      src="B.jpeg"
+    />
+    <form
+      class="search-bar"
+    >
+      <span
+        name="search"
+      >
+         Search by Coin here 
+      </span>
+      <input
+        id="searchBar"
+        name="search"
+        placeholder="Coin name or symbol"
+        type="text"
+      />
+    </form>
+    <div
+      class="coins-container"
+    />
+  </div>
+</DocumentFragment>
+`;
