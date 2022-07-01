@@ -12,6 +12,7 @@ const coins = async () => {
     rank: coin.market_cap_rank,
     cap: coin.market_cap,
     clicked: false,
+    searched: true,
     fully_diluted_valuation: coin.fully_diluted_valuation,
     total_volume: coin.total_volume,
     high_24h: coin.high_24h,

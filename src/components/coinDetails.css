@@ -5,10 +5,16 @@ body {
 a {
   text-decoration: none;
   color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 2vw;
+  display: flex;
+  align-items: center;
 }
 
 a > svg {
   fill: white;
+  width: 3vw;
+  height: 3vw;
 }
 
 .coin-title {
@@ -24,7 +30,8 @@ a > svg {
 }
 
 .coin-image {
-  opacity: 1;
+  width: 30vw;
+  height: 30vw;
 }
 
 .coin-name,
@@ -66,7 +73,7 @@ a > svg {
   padding-left: 1vw;
 }
 
-.stats:nth-child(n+2) {
+.stats > h3:nth-child(2n + 1) {
   background-color: rgb(40, 39, 39);
 }
 
