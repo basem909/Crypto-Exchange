@@ -1,4 +1,5 @@
 import { useSelector } from 'react-redux';
+import PropTypes from 'prop-types';
 import Coin from './coin';
 import './coinList.css';
 import logo from './assets/B.jpeg';
@@ -12,19 +13,19 @@ const CoinsExihbit = ({ clickHandler, changeHandler }) => {
         <h1 className="title">Crypto World</h1>
       </header>
       <img src={logo} alt="crypto" className="background" />
-      <span className="search-bar">
-        <label name="search"> Search by Coin here </label>
+      <form className="search-bar">
+        <span name="search"> Search by Coin here </span>
         <input
           type="text"
           name="search"
           id="searchBar"
-          placeholder="Coins name or symbol"
+          placeholder="Coin name or symbol"
           onChange={(e) => {
             const newStr = e.target.value.toLowerCase() || '';
             changeHandler(newStr);
           }}
         />
-      </span>
+      </form>
       <div className="coins-container">
         {filteredCoins
           && filteredCoins.map((coin) => (
@@ -46,3 +47,8 @@ const CoinsExihbit = ({ clickHandler, changeHandler }) => {
 };
 
 export default CoinsExihbit;
+
+CoinsExihbit.propTypes = {
+  clickHandler: PropTypes.func.isRequired,
+  changeHandler: PropTypes.func,
+};

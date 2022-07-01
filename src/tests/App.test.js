@@ -1,21 +1,21 @@
-import React from "react";
-import { render, cleanup } from "@testing-library/react";
-import { Provider } from "react-redux";
-import store from "../redux/store";
-import "@testing-library/jest-dom/extend-expect";
-import App from "../App";
+import React from 'react';
+import { render, cleanup } from '@testing-library/react';
+import { Provider } from 'react-redux';
+import '@testing-library/jest-dom/extend-expect';
 import { BrowserRouter as Router } from 'react-router-dom';
+import App from '../App';
+import store from '../redux/store';
 
-describe("App snapshot", () => {
+describe('App snapshot', () => {
   afterEach(cleanup);
 
-  it("should render App correctly", () => {
+  it('should render App correctly', () => {
     const { asFragment } = render(
       <Provider store={store}>
         <Router>
           <App />
         </Router>
-      </Provider>
+      </Provider>,
     );
     expect(asFragment(<App />)).toMatchSnapshot();
   });

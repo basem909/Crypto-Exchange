@@ -73,10 +73,6 @@ a > svg {
   padding-left: 1vw;
 }
 
-.stats > h3:nth-child(2n + 1) {
-  background-color: rgb(40, 39, 39);
-}
-
 .stats > h3 {
   color: white;
   font-family: "Gill Sans", sans-serif;
@@ -86,4 +82,8 @@ a > svg {
   margin-right: 3vw;
   margin-bottom: 3vw;
   padding: 2vw;
+}
+
+.stats > h3:nth-child(2n + 1) {
+  background-color: rgb(40, 39, 39);
 }

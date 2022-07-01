@@ -1,5 +1,6 @@
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import './coinDetails.css';
 
 const CoinDetails = ({ clickHandler }) => {
@@ -11,7 +12,7 @@ const CoinDetails = ({ clickHandler }) => {
       <header>
         <Link
           to="/"
-           id={coins[0].id}
+          id={coins[0].id}
           onClick={(e) => clickHandler(e.target.id)}
         >
           <svg
@@ -145,3 +146,7 @@ const CoinDetails = ({ clickHandler }) => {
 };
 
 export default CoinDetails;
+
+CoinDetails.propTypes = {
+  clickHandler: PropTypes.func.isRequired,
+};

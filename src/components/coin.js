@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 const Coin = ({
   id, name, image, symbol, price, cap, clickHandler,
@@ -34,3 +35,13 @@ const Coin = ({
 );
 
 export default Coin;
+
+Coin.propTypes = {
+  name: PropTypes.string.isRequired,
+  symbol: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
+  cap: PropTypes.number.isRequired,
+  price: PropTypes.number.isRequired,
+  clickHandler: PropTypes.func.isRequired,
+};

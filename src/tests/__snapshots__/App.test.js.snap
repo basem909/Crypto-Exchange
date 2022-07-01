@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Myprofile snapshot should render APP correctly 1`] = `
+exports[`App snapshot should render App correctly 1`] = `
 <DocumentFragment>
   <div
     class="App"
@@ -20,21 +20,21 @@ exports[`Myprofile snapshot should render APP correctly 1`] = `
         class="background"
         src="B.jpeg"
       />
-      <span
+      <form
         class="search-bar"
       >
-        <label
+        <span
           name="search"
         >
            Search by Coin here 
-        </label>
+        </span>
         <input
           id="searchBar"
           name="search"
-          placeholder="Coins name or symbol"
+          placeholder="Coin name or symbol"
           type="text"
         />
-      </span>
+      </form>
       <div
         class="coins-container"
       />
