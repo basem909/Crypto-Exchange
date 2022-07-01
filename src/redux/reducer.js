@@ -12,12 +12,16 @@ const showCoins = function reducer(state = [], action = {}) {
         return { ...coin, clicked: !coin.clicked };
       });
     case coinSearched:
-      return state.map((coin) =>{
-        if(coin.name.toLowerCase().includes(action.payload)){
-          return {...coin, searched: true}
+      console.log('activated');
+      return state.map((coin) => {
+        if (
+          coin.name.toLowerCase().includes(action.payload)
+          || coin.symbol.toLowerCase().includes(action.payload)
+        ) {
+          return { ...coin, searched: true };
         }
-      return {...coin, searched: false}}
-      );
+        return { ...coin, searched: false };
+      });
     default:
       return state;
   }

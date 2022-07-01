@@ -1,5 +1,5 @@
-import coins from "../components/API";
-import { coinSearched, coinsShowed, detailsShowed } from "./action-types";
+import coins from '../components/API';
+import { coinSearched, coinsShowed, detailsShowed } from './action-types';
 
 export const showCoinList = () => async (dispatch) => {
   const coinList = await coins();
@@ -11,4 +11,4 @@ export const showDetails = (id) => ({
   payload: id,
 });
 
-export const searchCoinlist = (str) => ({ type: coinSearched, payload: str, });
+export const searchCoinlist = (str) => ({ type: coinSearched, payload: str });

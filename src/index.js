@@ -4,7 +4,6 @@ import './index.css';
 import { Provider } from 'react-redux';
 import { BrowserRouter as Router } from 'react-router-dom';
 import App from './App';
-import coins from './components/API';
 import store from './redux/store';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

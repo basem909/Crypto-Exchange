@@ -1,13 +1,12 @@
-import { useDispatch } from "react-redux";
-import { Routes, Route } from "react-router-dom";
-import "./App.css";
-import CoinDetails from "./components/coinDetails";
-import CoinsExihbit from "./components/coinList";
+import { useDispatch } from 'react-redux';
+import { Routes, Route } from 'react-router-dom';
+import './App.css';
+import CoinDetails from './components/coinDetails';
+import CoinsExihbit from './components/coinList';
 import {
   searchCoinlist,
-  showCoinList,
   showDetails,
-} from "./redux/action-creators";
+} from './redux/action-creators';
 
 const App = () => {
   const dispatch = useDispatch();
@@ -15,21 +14,19 @@ const App = () => {
     dispatch(showDetails(id));
   };
   const changehandler = (str) => {
-    
-      dispatch(searchCoinlist(str));
-    
+    dispatch(searchCoinlist(str));
   };
   return (
     <div className="App">
       <Routes>
         <Route
           path="/"
-          element={
+          element={(
             <CoinsExihbit
               clickHandler={clickHandler}
               changeHandler={changehandler}
             />
-          }
+          )}
         />
         <Route
           path="/coinDetails"
