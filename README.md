@@ -22,7 +22,7 @@
 
 ## Live Demo
 
-- [Live Demo Link]()
+- [Live Demo Link](https://dainty-lebkuchen-c55b3a.netlify.app/)
 
 ## Getting Started
 
