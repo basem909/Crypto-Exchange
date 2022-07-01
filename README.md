@@ -24,6 +24,9 @@
 
 - [Live Demo Link](https://dainty-lebkuchen-c55b3a.netlify.app/)
 
+## Video documentation
+
+https://www.loom.com/share/cf8b09276c5a4f879bea8a7f179c6265
 ## Getting Started
 
 To get a local copy up and running follow these simple steps:
